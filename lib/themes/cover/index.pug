@@ -173,8 +173,6 @@ html(lang="en")
 														div.row
 															if testCase.isFailure
 																div.col-md-offset-2.col-md-1.status.failure &#10005;
-															else
-																div.col-md-offset-2.col-md-1.status.success &#10003;
 															div.col-md-9.name= testCase.message
 														if testCase.isFailure
 															each sshot in testCase.screenshots
