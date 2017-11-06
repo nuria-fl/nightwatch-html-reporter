@@ -170,11 +170,10 @@ html(lang="en")
 													div.col-md-7.overf= suite.name
 												div.asserts
 													each testCase in suite.cases
-														div.row
-															if testCase.isFailure
-																div.col-md-offset-2.col-md-1.status.failure &#10005;
-															div.col-md-9.name= testCase.message
 														if testCase.isFailure
+															div.row
+																div.col-md-offset-2.col-md-1.status.failure &#10005;
+																div.col-md-9.name= testCase.message
 															each sshot in testCase.screenshots
 																div.row
 																	a(href= sshot, target= 'blank')
