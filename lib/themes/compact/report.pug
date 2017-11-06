@@ -20,10 +20,10 @@ h1 Nightwatch Results
 						h3.name= suite.name
 						ul.testcases
 							each testCase in suite.cases
-                                if testCase.isFailure
-    								li.testcase.error
-    										div.status &#10005;
-    										div.name= testCase.message + " " + testCase.failure
-    										each sshot in testCase.screenshots
-    											div.screenshot
-    												img(src= sshot)
+								if testCase.isFailure
+									li.testcase.error
+											div.status &#10005;
+											div.name= testCase.message + " " + testCase.failure
+											each sshot in testCase.screenshots
+												div.screenshot
+													img(src= sshot)
